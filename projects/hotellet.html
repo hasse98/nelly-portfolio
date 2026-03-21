@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotellet — Nelly Elfvelin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Organic background shapes -->
+  <div class="organic-shapes">
+    <div class="organic-shape organic-shape--1"></div>
+    <div class="organic-shape organic-shape--2"></div>
+    <div class="organic-shape organic-shape--3"></div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">Nelly Elfvelin</a>
+    <div class="nav__links">
+      <a href="../index.html#projects" data-i18n="nav.projects">Projekt</a>
+      <a href="../index.html#about" data-i18n="nav.about">Om mig</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Kontakt</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html#projects" data-i18n="nav.projects">Projekt</a>
+    <a href="../index.html#about" data-i18n="nav.about">Om mig</a>
+    <a href="../index.html#contact" data-i18n="nav.contact">Kontakt</a>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">EN</button>
+  </div>
+
+  <div class="project-hero" style="background-image: url('../images/projects/04-hotellet/cover.jpg');">
+    <span class="project-hero__placeholder">04</span>
+  </div>
+
+  <div class="project-header reveal">
+    <div>
+      <h1 class="project-header__title">Hotellet</h1>
+      <p class="project-header__subtitle" data-i18n="hotel.subtitle">Visualisering av ett hotell vid Klippan i Göteborg — en utforskning av rum, materialitet och publik arkitektur.</p>
+    </div>
+    <div class="project-meta">
+      <div class="project-meta__item">
+        <span class="project-meta__label" data-i18n="meta.date">Datum</span>
+        <span class="project-meta__value">Chalmers</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-section reveal">
+      <div class="project-section__text">
+        <h3 data-i18n="hotel.context.title">Hotell i stadsmiljö</h3>
+        <p data-i18n="hotel.context.text">Projektet är ett visualiseringsarbete av ett hotell beläget vid Klippan i Göteborg, ett område präglat av industriell historia och ett rikt kulturliv. Hotellets gestaltning tar avstamp i platsens karaktär genom en tydlig materialitet i rött tegel och en vertikal rytm av kraftfulla pelare.</p>
+      </div>
+      <div class="project-image--placeholder">
+        <span>Fasadvy</span>
+      </div>
+    </div>
+
+    <div class="project-section reveal">
+      <div class="project-section__text">
+        <h3 data-i18n="hotel.design.title">Material & konstruktion</h3>
+        <p data-i18n="hotel.design.text">Generösa glasade partier skapar transparens, dagsljus och visuell kontakt mellan byggnadens inre och det offentliga rummet. Den bärande konstruktionen görs delvis synlig och integreras som ett arkitektoniskt motiv.</p>
+      </div>
+      <div class="project-image-grid">
+        <div class="project-image--placeholder">
+          <span>Fasadutsnitt</span>
+        </div>
+        <div class="project-image--placeholder">
+          <span>Interiör visualisering</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section reveal">
+      <div class="project-image--placeholder" style="aspect-ratio: 16/9;">
+        <span>Rendering — Hotell exteriör</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="project-nav__divider" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.5rem, 4vw, 3rem);"><div style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, #A3B396, transparent);"></div></div>
+  <nav class="project-nav">
+    <a href="alma-vardcentral.html" class="project-nav__link">
+      <span data-i18n="nav.prev">Föregående</span>
+      <span>Alma Vårdcentral</span>
+    </a>
+    <a href="bygglov.html" class="project-nav__link project-nav__link--next">
+      <span data-i18n="nav.next">Nästa</span>
+      <span>Bygglov</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+  <script>
+    Object.assign(translations.sv, {
+      'hotel.subtitle': 'Visualisering av ett hotell vid Klippan i Göteborg — en utforskning av rum, materialitet och publik arkitektur.',
+      'hotel.context.title': 'Hotell i stadsmiljö',
+      'hotel.context.text': 'Projektet är ett visualiseringsarbete av ett hotell beläget vid Klippan i Göteborg, ett område präglat av industriell historia och ett rikt kulturliv. Hotellets gestaltning tar avstamp i platsens karaktär genom en tydlig materialitet i rött tegel och en vertikal rytm av kraftfulla pelare.',
+      'hotel.design.title': 'Material & konstruktion',
+      'hotel.design.text': 'Generösa glasade partier skapar transparens, dagsljus och visuell kontakt mellan byggnadens inre och det offentliga rummet. Den bärande konstruktionen görs delvis synlig och integreras som ett arkitektoniskt motiv.',
+    });
+    Object.assign(translations.en, {
+      'hotel.subtitle': 'Visualization of a hotel at Klippan in Gothenburg — exploring space, materiality, and public architecture.',
+      'hotel.context.title': 'Hotel in an urban setting',
+      'hotel.context.text': 'The project is a visualization study of a hotel located at Klippan in Gothenburg, an area characterized by industrial history and a rich cultural life. The hotel\'s design takes its cue from the site\'s character through a distinct materiality in red brick and a vertical rhythm of powerful columns.',
+      'hotel.design.title': 'Material & construction',
+      'hotel.design.text': 'Generous glazed sections create transparency, daylight, and visual contact between the building\'s interior and the public space. The load-bearing structure is partially exposed and integrated as an architectural motif.',
+    });
+    setLanguage(currentLang);
+  </script>
+</body>
+</html>

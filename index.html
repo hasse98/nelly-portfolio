@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelly Elfvelin — Arkitektur Portfolio</title>
+  <meta name="description" content="Architecture portfolio of Nelly Elfvelin — healthcare architecture, sustainable design, and human-centered spaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Organic background shapes -->
+  <div class="organic-shapes">
+    <div class="organic-shape organic-shape--1"></div>
+    <div class="organic-shape organic-shape--2"></div>
+    <div class="organic-shape organic-shape--3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Nelly Elfvelin</a>
+    <div class="nav__links">
+      <a href="#projects" data-i18n="nav.projects">Projekt</a>
+      <a href="#about" data-i18n="nav.about">Om mig</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" data-i18n="nav.projects">Projekt</a>
+    <a href="#about" data-i18n="nav.about">Om mig</a>
+    <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">EN</button>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <!-- Decorative leaf SVGs -->
+    <svg class="hero__leaf hero__leaf--left parallax" data-speed="0.05" viewBox="0 0 200 200" fill="none">
+      <path d="M100 10C100 10 30 60 20 120C10 180 60 190 100 190C140 190 190 180 180 120C170 60 100 10 100 10Z" fill="currentColor"/>
+      <path d="M100 10C100 10 100 100 100 190" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+      <path d="M100 60C80 80 50 110 40 140" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
+      <path d="M100 60C120 80 150 110 160 140" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
+    </svg>
+    <svg class="hero__leaf hero__leaf--right parallax" data-speed="-0.05" viewBox="0 0 200 200" fill="none">
+      <path d="M100 10C100 10 30 60 20 120C10 180 60 190 100 190C140 190 190 180 180 120C170 60 100 10 100 10Z" fill="currentColor"/>
+      <path d="M100 10C100 10 100 100 100 190" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <div class="hero__content">
+      <h1 class="hero__name anim-fade-up">Nelly Elfvelin</h1>
+      <p class="hero__subtitle anim-fade-up anim-delay-1" data-i18n="hero.subtitle">Arkitektur</p>
+      <div class="hero__line anim-fade-up anim-delay-2"></div>
+      <p class="hero__tagline anim-fade-up anim-delay-3" data-i18n="hero.tagline">Omsorgsfullt gestaltad arkitektur i mänsklig skala</p>
+    </div>
+    <div class="hero__scroll-indicator anim-fade-up anim-delay-4">
+      <span data-i18n="hero.scroll">Scrolla</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+        <path d="M8 4V20M8 20L2 14M8 20L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="section-title reveal" data-i18n="projects.title">Projekt</h2>
+
+    <div class="projects__grid">
+
+      <!-- Project 01 -->
+      <a href="projects/it-takes-a-village.html" class="project-card reveal">
+        <div class="project-card__image-wrap">
+          <div class="project-card__image" style="background-image: url('images/projects/01-village/cover.jpg');">
+            <div class="project-card__placeholder">01</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__number">01</span>
+          <h3 class="project-card__title">It Takes a Village</h3>
+          <p class="project-card__desc" data-i18n="project.01.desc">Cancerrehabiliteringscenter — Examensarbete</p>
+        </div>
+      </a>
+
+      <!-- Project 02 -->
+      <a href="projects/vindskyddet.html" class="project-card reveal">
+        <div class="project-card__image-wrap">
+          <div class="project-card__image" style="background-image: url('images/projects/02-vindskydd/cover.jpg');">
+            <div class="project-card__placeholder">02</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__number">02</span>
+          <h3 class="project-card__title">I Lovart & Lä</h3>
+          <p class="project-card__desc" data-i18n="project.02.desc">Vindskydd — Bohusleden, Svartedalen</p>
+        </div>
+      </a>
+
+      <!-- Project 03 -->
+      <a href="projects/alma-vardcentral.html" class="project-card reveal">
+        <div class="project-card__image-wrap">
+          <div class="project-card__image" style="background-image: url('images/projects/03-vardcentral/cover.jpg');">
+            <div class="project-card__placeholder">03</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__number">03</span>
+          <h3 class="project-card__title">Alma Vårdcentral</h3>
+          <p class="project-card__desc" data-i18n="project.03.desc">Vårdcentral — Staffanstorp</p>
+        </div>
+      </a>
+
+      <!-- Project 04 -->
+      <a href="projects/hotellet.html" class="project-card reveal">
+        <div class="project-card__image-wrap">
+          <div class="project-card__image" style="background-image: url('images/projects/04-hotellet/cover.jpg');">
+            <div class="project-card__placeholder">04</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__number">04</span>
+          <h3 class="project-card__title">Hotellet</h3>
+          <p class="project-card__desc" data-i18n="project.04.desc">Visualisering av publik byggnad — Klippan, Göteborg</p>
+        </div>
+      </a>
+
+      <!-- Project 05 -->
+      <a href="projects/bygglov.html" class="project-card reveal">
+        <div class="project-card__image-wrap">
+          <div class="project-card__image" style="background-image: url('images/projects/05-bygglov/cover.jpg');">
+            <div class="project-card__placeholder">05</div>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__number">05</span>
+          <h3 class="project-card__title">Bygglov</h3>
+          <p class="project-card__desc" data-i18n="project.05.desc">Altanprojekt — Riv- och bygglov</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="philosophy reveal">
+    <div class="philosophy__leaf">&#10047;</div>
+    <p class="philosophy__quote" data-i18n="philosophy.quote">Genom att förstå både platsen och människorna som använder den strävar jag efter att forma arkitektur som inte bara fungerar idag, utan som kan anpassas över tid.</p>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about__divider"></div>
+    <div class="about__content">
+      <div class="about__text reveal">
+        <h2 class="section-title" data-i18n="about.title">Om mig</h2>
+        <p class="about__intro" data-i18n="about.intro">Jag är arkitekt med ett starkt intresse för vårdarkitektur och projekt i mänsklig skala. I mitt arbete utgår jag från människors rörelsemönster, vardag och framtida behov, med ambitionen att skapa rum som är funktionella, omsorgsfullt organiserade och långsiktigt hållbara.</p>
+        <p class="about__body" data-i18n="about.body">Jag drivs av det kreativa i arkitekturen och har ett särskilt intresse för träbyggande, materialitet och rumslig sammansättning. Genom att förstå både platsen och människorna som använder den strävar jag efter att forma arkitektur som inte bara fungerar idag, utan som kan anpassas över tid.</p>
+      </div>
+      <div class="about__details reveal reveal-stagger">
+        <div class="about__section">
+          <h3 data-i18n="about.education">Utbildning</h3>
+          <div class="about__item">
+            <span class="about__item-title">Chalmers Tekniska Högskola</span>
+            <span class="about__item-sub">Master in Architecture and Urban Design</span>
+            <span class="about__item-year">2023–2025</span>
+          </div>
+          <div class="about__item">
+            <span class="about__item-title">Chalmers Tekniska Högskola</span>
+            <span class="about__item-sub">Bachelor in Architecture</span>
+            <span class="about__item-year">2020–2022</span>
+          </div>
+        </div>
+        <div class="about__section">
+          <h3 data-i18n="about.experience">Erfarenhet</h3>
+          <div class="about__item">
+            <span class="about__item-title">Norconsult</span>
+            <span class="about__item-sub" data-i18n="about.norconsult">Arkitektur, praktik</span>
+            <span class="about__item-year">2022–2023</span>
+          </div>
+        </div>
+        <div class="about__section">
+          <h3 data-i18n="about.awards">Utmärkelser</h3>
+          <div class="about__item">
+            <span class="about__item-title" data-i18n="about.award1">Västkuststiftelsens pris för utmärkt friluftsdesign</span>
+            <span class="about__item-year">2020</span>
+          </div>
+          <div class="about__item">
+            <span class="about__item-title">Chalmers Mastercard Scholarship</span>
+            <span class="about__item-sub" data-i18n="about.award2">Cancerrehabilitering och arkitektur</span>
+            <span class="about__item-year">2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="contact" id="contact">
+    <div class="contact__divider"></div>
+    <div class="contact__content reveal">
+      <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
+      <div class="contact__links">
+        <a href="mailto:nelly.elfvelin@gmail.com" class="contact__link">nelly.elfvelin@gmail.com</a>
+        <a href="tel:+46722141402" class="contact__link">+46 72 214 14 02</a>
+        <a href="https://linkedin.com/in/nelly-elfvelin" class="contact__link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="contact__copy">&copy; 2025 Nelly Elfvelin</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

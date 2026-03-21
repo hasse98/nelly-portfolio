@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bygglov — Nelly Elfvelin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Organic background shapes -->
+  <div class="organic-shapes">
+    <div class="organic-shape organic-shape--1"></div>
+    <div class="organic-shape organic-shape--2"></div>
+    <div class="organic-shape organic-shape--3"></div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">Nelly Elfvelin</a>
+    <div class="nav__links">
+      <a href="../index.html#projects" data-i18n="nav.projects">Projekt</a>
+      <a href="../index.html#about" data-i18n="nav.about">Om mig</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Kontakt</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html#projects" data-i18n="nav.projects">Projekt</a>
+    <a href="../index.html#about" data-i18n="nav.about">Om mig</a>
+    <a href="../index.html#contact" data-i18n="nav.contact">Kontakt</a>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">EN</button>
+  </div>
+
+  <div class="project-hero" style="background-image: url('../images/projects/05-bygglov/cover.jpg');">
+    <span class="project-hero__placeholder">05</span>
+  </div>
+
+  <div class="project-header reveal">
+    <div>
+      <h1 class="project-header__title">Bygglov</h1>
+      <p class="project-header__subtitle" data-i18n="bygg.subtitle">Riv- och bygglov för en altan. Från betonggrund till träkonstruktion — ett privatprojekt i Askim.</p>
+    </div>
+    <div class="project-meta">
+      <div class="project-meta__item">
+        <span class="project-meta__label" data-i18n="meta.date">Datum</span>
+        <span class="project-meta__value">Juni 2025 –</span>
+      </div>
+      <div class="project-meta__item">
+        <span class="project-meta__label" data-i18n="meta.client">Beställare</span>
+        <span class="project-meta__value" data-i18n="bygg.client">Privat / Villa i Askim</span>
+      </div>
+      <div class="project-meta__item">
+        <span class="project-meta__label" data-i18n="meta.status">Status</span>
+        <span class="project-meta__value" data-i18n="bygg.status">Pågående — Bygglov godkänt, rivning pågår</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-section reveal">
+      <div class="project-section__text">
+        <h3 data-i18n="bygg.brief.title">Uppdrag</h3>
+        <p data-i18n="bygg.brief.text">Rita om och utöka altanen samt skapa en rymligare och mer tillgänglig trappa. Altanen med träpanel löper runt hörnet för att ge möjlighet till fler soltimmar. Glasat räcke mot trädgården och träpanel mot gatan för att minska insyn.</p>
+      </div>
+      <div class="project-image-grid">
+        <div class="project-image--placeholder">
+          <span>Altan — Ursprungsskick</span>
+        </div>
+        <div class="project-image--placeholder">
+          <span>Visualisering — Förslag</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section reveal">
+      <div class="project-image-grid">
+        <div class="project-image--placeholder">
+          <span>Planritning — Befintligt</span>
+        </div>
+        <div class="project-image--placeholder">
+          <span>Planritning — Förslag</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="project-nav__divider" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.5rem, 4vw, 3rem);"><div style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, #A3B396, transparent);"></div></div>
+  <nav class="project-nav">
+    <a href="hotellet.html" class="project-nav__link">
+      <span data-i18n="nav.prev">Föregående</span>
+      <span>Hotellet</span>
+    </a>
+    <a href="../index.html" class="project-nav__link project-nav__link--next">
+      <span data-i18n="project.back">Tillbaka till alla projekt</span>
+      <span>&#8594;</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+  <script>
+    Object.assign(translations.sv, {
+      'bygg.subtitle': 'Riv- och bygglov för en altan. Från betonggrund till träkonstruktion — ett privatprojekt i Askim.',
+      'bygg.client': 'Privat / Villa i Askim',
+      'bygg.status': 'Pågående — Bygglov godkänt, rivning pågår',
+      'bygg.brief.title': 'Uppdrag',
+      'bygg.brief.text': 'Rita om och utöka altanen samt skapa en rymligare och mer tillgänglig trappa. Altanen med träpanel löper runt hörnet för att ge möjlighet till fler soltimmar. Glasat räcke mot trädgården och träpanel mot gatan för att minska insyn.',
+    });
+    Object.assign(translations.en, {
+      'bygg.subtitle': 'Demolition and building permit for a deck. From concrete foundation to timber construction — a private project in Askim.',
+      'bygg.client': 'Private / Villa in Askim',
+      'bygg.status': 'Ongoing — Building permit approved, demolition in progress',
+      'bygg.brief.title': 'Brief',
+      'bygg.brief.text': 'Redesign and extend the deck with a more spacious and accessible staircase. The timber-clad deck wraps around the corner to allow for more hours of sunlight. Glass railing towards the garden and timber paneling towards the street for privacy.',
+    });
+    setLanguage(currentLang);
+  </script>
+</body>
+</html>
