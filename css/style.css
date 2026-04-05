@@ -1,5 +1,5 @@
 /* ============================================
-   Nelly Elfvelin — Architecture Portfolio
+   Nelly Elfvelin , Architecture Portfolio
    Warm & Biophilic Theme
    ============================================ */
 
@@ -1057,7 +1057,7 @@ h1, h2, h3 {
   color: var(--color-text-light);
 }
 
-/* Project images — works as both container and direct <img> */
+/* Project images , works as both container and direct <img> */
 .project-image {
   width: 100%;
   border-radius: var(--radius);
@@ -1115,6 +1115,15 @@ img.project-image {
   color: var(--color-sage);
   margin-top: 0.5rem;
   font-style: italic;
+}
+
+/* PDF embeds */
+.project-pdf {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: var(--radius);
+  display: block;
 }
 
 /* Full-bleed image */

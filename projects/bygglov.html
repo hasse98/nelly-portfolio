@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bygglov — Nelly Elfvelin</title>
+  <title>Bygglov | Nelly Elfvelin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
   <div class="project-header reveal">
     <div>
       <h1 class="project-header__title">Bygglov</h1>
-      <p class="project-header__subtitle" data-i18n="bygg.subtitle">Riv- och bygglov för en altan. Från betonggrund till träkonstruktion — ett privatprojekt i Askim.</p>
+      <p class="project-header__subtitle" data-i18n="bygg.subtitle">Riv- och bygglov för en altan. Från betonggrund till träkonstruktion , ett privatprojekt i Askim.</p>
     </div>
     <div class="project-meta">
       <div class="project-meta__item">
@@ -59,7 +59,7 @@
       </div>
       <div class="project-meta__item">
         <span class="project-meta__label" data-i18n="meta.status">Status</span>
-        <span class="project-meta__value" data-i18n="bygg.status">Pågående — Bygglov godkänt, rivning pågår</span>
+        <span class="project-meta__value" data-i18n="bygg.status">Pågående , Bygglov godkänt, rivning pågår</span>
       </div>
     </div>
   </div>
@@ -72,16 +72,27 @@
         <p data-i18n="bygg.brief.text">Rita om och utöka altanen samt skapa en rymligare och mer tillgänglig trappa. Altanen med träpanel löper runt hörnet för att ge möjlighet till fler soltimmar. Glasat räcke mot trädgården och träpanel mot gatan för att minska insyn.</p>
       </div>
       <div class="project-image-grid">
-        <img src="../images/projects/05-bygglov/original.jpg" alt="Altan — Ursprungsskick" class="project-image" loading="lazy">
-        <img src="../images/projects/05-bygglov/visualization.jpg" alt="Visualisering — Förslag" class="project-image" loading="lazy">
+        <img src="../images/projects/05-bygglov/original.jpg" alt="Altan , Ursprungsskick" class="project-image" loading="lazy">
+        <img src="../images/projects/05-bygglov/visualization.jpg" alt="Visualisering , Förslag" class="project-image" loading="lazy">
       </div>
     </div>
 
     <div class="project-section reveal">
-      <div class="project-image-grid">
-        <img src="../images/projects/05-bygglov/floor-plan.jpg" alt="Planritning — Befintligt" class="project-image" loading="lazy">
-        <img src="../images/projects/05-bygglov/facade-north.jpg" alt="Planritning — Förslag" class="project-image" loading="lazy">
+      <div class="project-section__text">
+        <h3 data-i18n="bygg.plans.title">Planritning</h3>
       </div>
+      <img src="../images/projects/05-bygglov/planritning.png" alt="Planritning" class="project-image" loading="lazy">
+    </div>
+
+    <div class="project-section reveal">
+      <div class="project-section__text">
+        <h3 data-i18n="bygg.facades.title">Fasader</h3>
+      </div>
+      <div class="project-image-grid">
+        <img src="../images/projects/05-bygglov/fasad-norr.png" alt="Fasad mot norr" class="project-image" loading="lazy">
+        <img src="../images/projects/05-bygglov/fasad-soder.png" alt="Fasad mot söder" class="project-image" loading="lazy">
+      </div>
+      <img src="../images/projects/05-bygglov/fasad-vaster.png" alt="Fasad mot väster" class="project-image" loading="lazy" style="margin-top: var(--spacing-md);">
     </div>
 
   </div>
@@ -101,18 +112,22 @@
   <script src="../js/main.js"></script>
   <script>
     Object.assign(translations.sv, {
-      'bygg.subtitle': 'Riv- och bygglov för en altan. Från betonggrund till träkonstruktion — ett privatprojekt i Askim.',
+      'bygg.subtitle': 'Riv- och bygglov för en altan. Från betonggrund till träkonstruktion , ett privatprojekt i Askim.',
       'bygg.client': 'Privat / Villa i Askim',
-      'bygg.status': 'Pågående — Bygglov godkänt, rivning pågår',
+      'bygg.status': 'Pågående , Bygglov godkänt, rivning pågår',
       'bygg.brief.title': 'Uppdrag',
       'bygg.brief.text': 'Rita om och utöka altanen samt skapa en rymligare och mer tillgänglig trappa. Altanen med träpanel löper runt hörnet för att ge möjlighet till fler soltimmar. Glasat räcke mot trädgården och träpanel mot gatan för att minska insyn.',
+      'bygg.plans.title': 'Planritning',
+      'bygg.facades.title': 'Fasader',
     });
     Object.assign(translations.en, {
-      'bygg.subtitle': 'Demolition and building permit for a deck. From concrete foundation to timber construction — a private project in Askim.',
+      'bygg.subtitle': 'Demolition and building permit for a deck. From concrete foundation to timber construction , a private project in Askim.',
       'bygg.client': 'Private / Villa in Askim',
-      'bygg.status': 'Ongoing — Building permit approved, demolition in progress',
+      'bygg.status': 'Ongoing , Building permit approved, demolition in progress',
       'bygg.brief.title': 'Brief',
       'bygg.brief.text': 'Redesign and extend the deck with a more spacious and accessible staircase. The timber-clad deck wraps around the corner to allow for more hours of sunlight. Glass railing towards the garden and timber paneling towards the street for privacy.',
+      'bygg.plans.title': 'Floor Plan',
+      'bygg.facades.title': 'Facades',
     });
     setLanguage(currentLang);
   </script>

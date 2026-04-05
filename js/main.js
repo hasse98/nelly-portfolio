@@ -1,6 +1,6 @@
 /* ============================================
-   Nelly Elfvelin — Portfolio JS
-   Warm & Biophilic — Expressive Interactions
+   Nelly Elfvelin , Portfolio JS
+   Warm & Biophilic , Expressive Interactions
    ============================================ */
 
 // --- Translations ---
@@ -13,12 +13,12 @@ const translations = {
     'hero.tagline': 'Arkitektur för vård, välmående och mänsklig skala',
     'hero.scroll': 'Scrolla',
     'projects.title': 'Projekt',
-    'project.01.desc': 'Cancerrehabiliteringscenter — Examensarbete',
-    'project.02.desc': 'Vindskydd — Bohusleden, Svartedalen',
-    'project.03.desc': 'Vårdcentral — Staffanstorp',
-    'project.04.desc': 'Visualisering av publik byggnad — Klippan, Göteborg',
-    'project.05.desc': 'Altanprojekt — Riv- och bygglov',
-    'philosophy.quote': 'Jag tror att rum kan läka. Genom ljus, materialval och omsorgsfull planering skapar jag arkitektur som stödjer människors välmående — varje dag.',
+    'project.01.desc': 'Cancerrehabiliteringscenter, examensarbete',
+    'project.02.desc': 'Vindskydd längs Bohusleden, Svartedalen',
+    'project.03.desc': 'Vårdcentral i Staffanstorp',
+    'project.04.desc': 'Visualisering, publik byggnad i Klippan, Göteborg',
+    'project.05.desc': 'Altanprojekt, riv- och bygglov',
+    'philosophy.quote': 'Jag tror att rum kan läka. Genom ljus, materialval och omsorgsfull planering skapar jag arkitektur som stödjer människors välmående varje dag.',
     'about.title': 'Om mig',
     'about.intro': 'Jag är arkitekt med ett starkt intresse för vårdarkitektur och projekt i mänsklig skala. I mitt arbete utgår jag från människors rörelsemönster, vardag och framtida behov, med ambitionen att skapa rum som är funktionella, omsorgsfullt organiserade och långsiktigt hållbara.',
     'about.body': 'Jag drivs av det kreativa i arkitekturen och har ett särskilt intresse för träbyggande, materialitet och rumslig sammansättning. Genom att förstå både platsen och människorna som använder den strävar jag efter att forma arkitektur som inte bara fungerar idag, utan som kan anpassas över tid.',
@@ -30,7 +30,7 @@ const translations = {
     'about.award2': 'Cancerrehabilitering och arkitektur',
     'approach.title': 'Mitt förhållningssätt',
     'approach.pillar1.title': 'Människan i centrum',
-    'approach.pillar1.desc': 'Utgångspunkten är alltid människan — patienten, besökaren, den som lever i rummet. Varje beslut börjar med frågan: hur påverkar detta den som vistas här?',
+    'approach.pillar1.desc': 'Utgångspunkten är alltid människan: patienten, besökaren, den som lever i rummet. Varje beslut börjar med frågan: hur påverkar detta den som vistas här?',
     'approach.pillar2.title': 'Ljus & materialitet',
     'approach.pillar2.desc': 'Naturligt ljus, trä och taktila material skapar rum som inte bara syns, utan känns. Materialval som ger trygghet och bidrar till läkande miljöer.',
     'approach.pillar3.title': 'Anpassbarhet över tid',
@@ -61,14 +61,14 @@ const translations = {
     'hero.tagline': 'Architecture for care, well-being, and human scale',
     'hero.scroll': 'Scroll',
     'projects.title': 'Projects',
-    'project.01.desc': 'Cancer Rehabilitation Center — Master Thesis',
-    'project.02.desc': 'Wind Shelter — Bohusleden Trail, Svartedalen',
-    'project.03.desc': 'Healthcare Center — Staffanstorp',
-    'project.04.desc': 'Public Building Visualization — Klippan, Gothenburg',
-    'project.05.desc': 'Deck Project — Building Permit',
-    'philosophy.quote': 'I believe spaces can heal. Through light, material choices, and careful planning, I create architecture that supports people\'s well-being — every day.',
+    'project.01.desc': 'Cancer Rehabilitation Center, master thesis',
+    'project.02.desc': 'Wind Shelter, Bohusleden Trail, Svartedalen',
+    'project.03.desc': 'Healthcare Center in Staffanstorp',
+    'project.04.desc': 'Public Building Visualization, Klippan, Gothenburg',
+    'project.05.desc': 'Deck Project, building permit',
+    'philosophy.quote': 'I believe spaces can heal. Through light, material choices, and careful planning, I create architecture that supports people\'s well-being every day.',
     'about.title': 'About',
-    'about.intro': 'I am an architect with a strong interest in healthcare architecture and projects at a human scale. My work is rooted in people\'s movement patterns, everyday life, and future needs — with the ambition to create spaces that are functional, carefully organized, and sustainable in the long term.',
+    'about.intro': 'I am an architect with a strong interest in healthcare architecture and projects at a human scale. My work is rooted in people\'s movement patterns, everyday life, and future needs, with the ambition to create spaces that are functional, carefully organized, and sustainable in the long term.',
     'about.body': 'I am driven by the creative aspects of architecture and have a particular interest in timber construction, materiality, and spatial composition. By understanding both the place and the people who use it, I strive to shape architecture that not only works today, but can adapt over time.',
     'about.education': 'Education',
     'about.experience': 'Experience',
@@ -78,7 +78,7 @@ const translations = {
     'about.award2': 'Cancer rehabilitation and architecture',
     'approach.title': 'My Approach',
     'approach.pillar1.title': 'People at the Center',
-    'approach.pillar1.desc': 'The starting point is always the person — the patient, the visitor, the one who lives in the space. Every decision begins with the question: how does this affect the one who is here?',
+    'approach.pillar1.desc': 'The starting point is always the person: the patient, the visitor, the one who lives in the space. Every decision begins with the question: how does this affect the one who is here?',
     'approach.pillar2.title': 'Light & Materiality',
     'approach.pillar2.desc': 'Natural light, wood, and tactile materials create spaces that are not just seen, but felt. Material choices that provide comfort and contribute to healing environments.',
     'approach.pillar3.title': 'Adaptability Over Time',
