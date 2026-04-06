@@ -44,23 +44,34 @@
 
   <!-- Hero -->
   <header class="hero" id="hero">
-    <!-- Decorative leaf SVGs -->
-    <svg class="hero__leaf hero__leaf--left parallax" data-speed="0.05" viewBox="0 0 200 200" fill="none">
-      <path d="M100 10C100 10 30 60 20 120C10 180 60 190 100 190C140 190 190 180 180 120C170 60 100 10 100 10Z" fill="currentColor"/>
-      <path d="M100 10C100 10 100 100 100 190" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-      <path d="M100 60C80 80 50 110 40 140" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
-      <path d="M100 60C120 80 150 110 160 140" stroke="currentColor" stroke-width="0.5" opacity="0.2"/>
-    </svg>
 
-    <div class="hero__inner">
-      <div class="hero__content">
-        <h1 class="hero__name anim-fade-up">Nelly Elfvelin</h1>
-        <p class="hero__subtitle anim-fade-up anim-delay-1" data-i18n="hero.subtitle">Arkitektur</p>
-        <div class="hero__line anim-fade-up anim-delay-2"></div>
-        <p class="hero__tagline anim-fade-up anim-delay-3" data-i18n="hero.tagline">Arkitektur för vård, välmående och mänsklig skala</p>
+    <div class="hero__open-badge anim-fade-up">
+      <span class="hero__open-dot"></span>
+      <span data-i18n="hero.open">Open to work</span>
+    </div>
+
+    <div class="hero__bg-name" aria-hidden="true">
+      <span>Nelly</span>
+      <span>Elfvelin</span>
+    </div>
+
+    <div class="hero__body">
+      <div class="hero__left anim-fade-up anim-delay-3">
+        <p class="hero__tagline" data-i18n="hero.tagline">Arkitektur för vård, välmående och mänsklig skala</p>
+        <a href="#projects" class="hero__cta" data-i18n="hero.cta">// Se projekt &rarr;</a>
       </div>
-      <div class="hero__portrait anim-fade-up anim-delay-2">
+
+      <div class="hero__portrait-wrap anim-fade-up anim-delay-1">
         <img src="images/nelly-portrait.jpg" alt="Nelly Elfvelin">
+      </div>
+
+      <div class="hero__right anim-fade-up anim-delay-2">
+        <ul class="hero__specialties">
+          <li data-i18n="hero.spec1">Platsanalys</li>
+          <li class="hero__specialty--active" data-i18n="hero.spec2">Vårdarkitektur</li>
+          <li data-i18n="hero.spec3">Träbyggande</li>
+          <li data-i18n="hero.spec4">Hållbar design</li>
+        </ul>
       </div>
     </div>
 

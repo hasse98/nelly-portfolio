@@ -9,8 +9,13 @@ const translations = {
     'nav.projects': 'Projekt',
     'nav.about': 'Om mig',
     'nav.contact': 'Kontakt',
-    'hero.subtitle': 'Arkitektur',
+    'hero.open': 'Open to work',
     'hero.tagline': 'Arkitektur för vård, välmående och mänsklig skala',
+    'hero.cta': '// Se projekt →',
+    'hero.spec1': 'Platsanalys',
+    'hero.spec2': 'Vårdarkitektur',
+    'hero.spec3': 'Träbyggande',
+    'hero.spec4': 'Hållbar design',
     'hero.scroll': 'Scrolla',
     'projects.title': 'Projekt',
     'project.01.desc': 'Cancerrehabiliteringscenter, examensarbete',
@@ -57,8 +62,13 @@ const translations = {
     'nav.projects': 'Projects',
     'nav.about': 'About',
     'nav.contact': 'Contact',
-    'hero.subtitle': 'Architecture',
+    'hero.open': 'Open to work',
     'hero.tagline': 'Architecture for care, well-being, and human scale',
+    'hero.cta': '// View projects →',
+    'hero.spec1': 'Site Analysis',
+    'hero.spec2': 'Healthcare Architecture',
+    'hero.spec3': 'Timber Construction',
+    'hero.spec4': 'Sustainable Design',
     'hero.scroll': 'Scroll',
     'projects.title': 'Projects',
     'project.01.desc': 'Cancer Rehabilitation Center, master thesis',
@@ -339,7 +349,7 @@ function initHeroParallax() {
   const hero = document.querySelector('.hero');
   if (!hero) return;
 
-  const heroContent = hero.querySelector('.hero__content');
+  const heroBody = hero.querySelector('.hero__body');
   const scrollIndicator = hero.querySelector('.hero__scroll-indicator');
 
   window.addEventListener('scroll', () => {
@@ -348,8 +358,8 @@ function initHeroParallax() {
     if (scrollY > heroHeight) return;
 
     const progress = scrollY / heroHeight;
-    if (heroContent) {
-      heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
+    if (heroBody) {
+      heroBody.style.transform = `translateY(${scrollY * 0.3}px)`;
       heroContent.style.opacity = 1 - progress * 1.5;
     }
     if (scrollIndicator) {
