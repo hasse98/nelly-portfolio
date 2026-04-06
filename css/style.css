@@ -1110,12 +1110,17 @@ img.project-image {
   margin-bottom: var(--spacing-md);
 }
 
-.project-image-grid--small {
-  grid-template-columns: repeat(2, minmax(0, 320px));
-  justify-content: center;
+.project-image-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
-.project-image-grid--small img.project-image {
+.project-image-stack img.project-image {
+  width: 100%;
+  max-width: 560px;
   height: auto;
   object-fit: contain;
 }
