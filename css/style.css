@@ -1110,6 +1110,16 @@ img.project-image {
   margin-bottom: var(--spacing-md);
 }
 
+.project-image-grid--small {
+  grid-template-columns: repeat(2, minmax(0, 320px));
+  justify-content: center;
+}
+
+.project-image-grid--small img.project-image {
+  height: auto;
+  object-fit: contain;
+}
+
 .project-image-caption {
   font-size: 0.8rem;
   color: var(--color-sage);
