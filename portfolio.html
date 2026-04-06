@@ -54,32 +54,102 @@
       </a>
     </div>
 
-    <div class="pdf-embed-wrap reveal">
-      <iframe
-        src="images/projects/Portfolio Nelly Elfvelin compressed.pdf"
-        class="pdf-embed"
-        title="Portfolio Nelly Elfvelin"
-        loading="lazy">
-        <p data-i18n="portfolio.fallback">Din webbläsare kan inte visa PDF:er.
-          <a href="images/projects/Portfolio Nelly Elfvelin compressed.pdf">Klicka här för att ladda ner</a>.
-        </p>
-      </iframe>
+    <div class="pdf-catalog" id="pdfCatalog">
+      <div class="pdf-loading" id="pdfLoading">
+        <div class="pdf-loading__spinner"></div>
+        <span data-i18n="portfolio.loading">Laddar portfolio…</span>
+      </div>
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="js/main.js"></script>
   <script>
     Object.assign(translations.sv, {
       'portfolio.title': 'Portfolio',
       'portfolio.download': 'Ladda ner PDF',
-      'portfolio.fallback': 'Din webbläsare kan inte visa PDF:er.',
+      'portfolio.loading': 'Laddar portfolio…',
+      'portfolio.error': 'Kunde inte ladda PDF.',
     });
     Object.assign(translations.en, {
       'portfolio.title': 'Portfolio',
       'portfolio.download': 'Download PDF',
-      'portfolio.fallback': 'Your browser cannot display PDFs.',
+      'portfolio.loading': 'Loading portfolio…',
+      'portfolio.error': 'Could not load PDF.',
     });
     setLanguage(currentLang);
+
+    // --- PDF.js catalog renderer ---
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    const PDF_URL = 'images/projects/Portfolio%20Nelly%20Elfvelin%20compressed.pdf';
+
+    async function addSpread(pdf, container, pageNums, scale) {
+      const spread = document.createElement('div');
+      spread.className = 'pdf-spread pdf-spread--' + (pageNums.length === 1 ? 'single' : 'double');
+
+      for (const num of pageNums) {
+        const page = await pdf.getPage(num);
+        const viewport = page.getViewport({ scale });
+
+        const canvas = document.createElement('canvas');
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width  = Math.floor(viewport.width  * dpr);
+        canvas.height = Math.floor(viewport.height * dpr);
+        canvas.style.width  = Math.floor(viewport.width)  + 'px';
+        canvas.style.height = Math.floor(viewport.height) + 'px';
+
+        const ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+        await page.render({ canvasContext: ctx, viewport }).promise;
+
+        spread.appendChild(canvas);
+      }
+
+      container.appendChild(spread);
+    }
+
+    async function initPDFViewer() {
+      const catalog = document.getElementById('pdfCatalog');
+      const loading = document.getElementById('pdfLoading');
+
+      try {
+        const pdf = await pdfjsLib.getDocument({ url: PDF_URL }).promise;
+        const total = pdf.numPages;
+
+        // Calculate scale from first page dimensions
+        const firstPage = await pdf.getPage(1);
+        const baseViewport = firstPage.getViewport({ scale: 1 });
+        const containerWidth = catalog.clientWidth;
+        const gap = 6; // px between pages in a spread
+
+        // Single page: fits ~55% of container width (feels like a centred cover)
+        const singleScale = (containerWidth * 0.55) / baseViewport.width;
+        // Double spread: two pages fill the container width minus the gap
+        const doubleScale = ((containerWidth - gap) / 2) / baseViewport.width;
+
+        loading.remove();
+
+        // Page 1 — single cover
+        await addSpread(pdf, catalog, [1], singleScale);
+
+        // Remaining pages — two-page spreads
+        for (let i = 2; i <= total; i += 2) {
+          const pair = [i];
+          if (i + 1 <= total) pair.push(i + 1);
+          const scale = pair.length === 2 ? doubleScale : singleScale;
+          await addSpread(pdf, catalog, pair, scale);
+        }
+      } catch (err) {
+        loading.querySelector('span').textContent =
+          (currentLang === 'en') ? 'Could not load PDF.' : 'Kunde inte ladda PDF.';
+        loading.querySelector('.pdf-loading__spinner').remove();
+        console.error(err);
+      }
+    }
+
+    initPDFViewer();
   </script>
 </body>
 </html>
