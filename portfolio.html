@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Nelly Elfvelin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="organic-shapes">
+    <div class="organic-shape organic-shape--1"></div>
+    <div class="organic-shape organic-shape--2"></div>
+    <div class="organic-shape organic-shape--3"></div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav__logo">Nelly Elfvelin</a>
+    <div class="nav__links">
+      <a href="index.html#projects" data-i18n="nav.projects">Projekt</a>
+      <a href="index.html#about" data-i18n="nav.about">Om mig</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
+      <a href="portfolio.html" class="nav__portfolio-btn nav__portfolio-btn--active" data-i18n="nav.portfolio">Portfolio</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#projects" data-i18n="nav.projects">Projekt</a>
+    <a href="index.html#about" data-i18n="nav.about">Om mig</a>
+    <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
+    <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+    <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">EN</button>
+  </div>
+
+  <div class="pdf-viewer-page">
+    <div class="pdf-viewer-header reveal">
+      <div>
+        <h1 class="pdf-viewer-header__title" data-i18n="portfolio.title">Portfolio</h1>
+        <p class="pdf-viewer-header__sub">Nelly Elfvelin — Arkitektur</p>
+      </div>
+      <a href="images/projects/Portfolio Nelly Elfvelin compressed.pdf" download class="pdf-download-btn" data-i18n="portfolio.download">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2v8M8 10L5 7M8 10l3-3M2 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Ladda ner PDF
+      </a>
+    </div>
+
+    <div class="pdf-embed-wrap reveal">
+      <iframe
+        src="images/projects/Portfolio Nelly Elfvelin compressed.pdf"
+        class="pdf-embed"
+        title="Portfolio Nelly Elfvelin"
+        loading="lazy">
+        <p data-i18n="portfolio.fallback">Din webbläsare kan inte visa PDF:er.
+          <a href="images/projects/Portfolio Nelly Elfvelin compressed.pdf">Klicka här för att ladda ner</a>.
+        </p>
+      </iframe>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    Object.assign(translations.sv, {
+      'portfolio.title': 'Portfolio',
+      'portfolio.download': 'Ladda ner PDF',
+      'portfolio.fallback': 'Din webbläsare kan inte visa PDF:er.',
+    });
+    Object.assign(translations.en, {
+      'portfolio.title': 'Portfolio',
+      'portfolio.download': 'Download PDF',
+      'portfolio.fallback': 'Your browser cannot display PDFs.',
+    });
+    setLanguage(currentLang);
+  </script>
+</body>
+</html>
